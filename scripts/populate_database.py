@@ -28,12 +28,12 @@ def populate_database_from_csv(csv_file_path):
             )
             AssessmentAreas.objects.create(
                 id=row['StudentID'],
-                assessment_ares = row['Assessment Areas']
+                assessment_areas = row['Assessment Areas']
             )
 
             Student.objects.create(
                 id=row['StudentID'],
-                full_name = row['First Name'] + row['Last Name']
+                full_name = row['First Name'] +' '+ row['Last Name']
             )
 
             Answers.objects.create(

@@ -11,14 +11,17 @@ def schools_view(request):
     class_name = ClassName.objects.all()
     return render(request, 'schools.html', {'class_name': class_name})
 
-    schools = School.objects.all()
-    return render(request, 'schools.html', {'schools': schools})
+    assessment_areas = School.objects.all()
+    return render(request, 'schools.html', {'assessment_areas': assessment_areas})
 
-    schools = School.objects.all()
-    return render(request, 'schools.html', {'schools': schools})
+    full_name = School.objects.all()
+    return render(request, 'schools.html', {'full_name': full_name})
 
-    schools = School.objects.all()
-    return render(request, 'schools.html', {'schools': schools})
+    answers = School.objects.all()
+    return render(request, 'schools.html', {'answers': answers})
 
-    schools = School.objects.all()
-    return render(request, 'schools.html', {'schools': schools})
+    awards = School.objects.all()
+    return render(request, 'schools.html', {'awards': awards})
+
+    subject = School.objects.all()
+    return render(request, 'schools.html', {'subject': subject})
