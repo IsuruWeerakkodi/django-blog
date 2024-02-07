@@ -18,38 +18,38 @@ def populate_database_from_csv(csv_file_path):
         reader = csv.DictReader(file)
         for row in reader:
             School.objects.create(
-                id = row['StudentID'],
+
                 name=row['school_name'],
             )    
 
             ClassName.objects.create(
-                id=row['StudentID'],
+
                 class_name=row['Class'],
             )
             AssessmentAreas.objects.create(
-                id=row['StudentID'],
-                assessment_areas = row['Assessment Areas']
+
+                name = row['Assessment Areas']
             )
 
             Student.objects.create(
-                id=row['StudentID'],
+
                 full_name = row['First Name'] +' '+ row['Last Name']
             )
 
             Answers.objects.create(
-                id=row['StudentID'],
+
                 answers = row['Answers']
             )
 
             Awards.objects.create(
-                id=row['StudentID'],
-                awards = row['award']
+
+                name = row['award']
             )
 
             Subject.objects.create(
-                id=row['StudentID'],
+
                 subject = row['Subject'],
-                subject_score = row['sydney average score']
+                subject_score = row['sydney_average_score']
             )
 
 # if __name__ == "__main__":

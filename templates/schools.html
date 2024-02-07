@@ -1,124 +1,132 @@
-<!-- data.html -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Visualization</title>
-  </head>
-  <body>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
 
     <h1>School</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Name</th>
+            <th>Name</th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         {% for school in schools %}
         <tr>
-          <td>{{ school.name }}</td>
+            <td>{{ school.name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
     <h1>Class</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Class</th>
+            <th>Class</th>
         </tr>
-      </thead>
-      <tbody>
-        {% for class_name in class_name %}
+        </thead>
+        <tbody>
+        {% for class_name in class_names %}
         <tr>
-          <td>{{ class_name.class_name }}</td>
+            <td>{{ class_name.class_name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
     <h1>Assessment Area</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Assessment area</th>
+            <th>Assessment area</th>
         </tr>
-      </thead>
-      <tbody>
-        {% for school in schools %}
+        </thead>
+        <tbody>
+        {% for assessment_area in assessment_areas %}
         <tr>
-          <td>{{ assessment_areas.name }}</td>
+            <td>{{ assessment_area.name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
     <h1>Student</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Student</th>
+            <th>Student</th>
         </tr>
-      </thead>
-      <tbody>
-        {% for school in schools %}
+        </thead>
+        <tbody>
+        {% for student in students %}
         <tr>
-          <td>{{ student.name }}</td>
+            <td>{{ student.name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
     <h1>Answers</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Answers</th>
+            <th>Answers</th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         {% for answer in answers %}
         <tr>
-          <td>{{ answers.name }}</td>
+            <td>{{ answer.name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
     <h1>Awards</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Awards</th>
+            <th>Awards</th>
         </tr>
-      </thead>
-      <tbody>
-        {% for school in schools %}
+        </thead>
+        <tbody>
+        {% for award in awards %}
         <tr>
-          <td>{{ award.name }}</td>
+            <td>{{ award.name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
     <h1>Subject</h1>
-    <table border="1">
-      <thead>
+    <table class="table table-bordered">
+        <thead>
         <tr>
-          <th>Subject</th>
+            <th>Subject</th>
         </tr>
-      </thead>
-      <tbody>
-        {% for school in schools %}
+        </thead>
+        <tbody>
+        {% for subject in subjects %}
         <tr>
-          <td>{{ subject.name }}</td>
+            <td>{{ subject.name }}</td>
         </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
 
-  </body>
+</div>
+
+<!-- Bootstrap JavaScript (optional, for certain Bootstrap components that require JS) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
