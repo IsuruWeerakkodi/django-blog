@@ -1,0 +1,42 @@
+<!-- data.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Visualization</title>
+  </head>
+  <body>
+    <h1>School</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>School</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>class_name</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
