@@ -11,19 +11,13 @@ Welcome to my Django application! This application is designed to provide data a
 1. Clone this repository to your local machine:
 
    ```
-   git clone https://github.com/IsuruWeerakkodi/djangoapp.git
+   git clone https://github.com/IsuruWeerakkodi/django-blog.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd djangoapp
-   ```
-
-3. Install the required Python packages:
-
-   ```
-   pip install -r requirements.txt
+   cd django-blog
    ```
 
 ## Database Setup
@@ -50,7 +44,7 @@ Welcome to my Django application! This application is designed to provide data a
 
 ## Usage
 - Once the app is running, you can navigate to different URLs to interact with the app features.
-- Use the Django admin interface (`http://127.0.0.1:8000/admin/`) to manage departments, employees, projects, skills, and managers.
+- Use the Django admin interface (`http://127.0.0.1:8000/admin/`) to manage students, schools, subjects, marks and more.
 
 ## Testing
 - Run the automated tests for the app:
