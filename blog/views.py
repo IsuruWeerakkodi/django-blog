@@ -11,3 +11,14 @@ def schools_view(request):
     class_name = ClassName.objects.all()
     return render(request, 'schools.html', {'class_name': class_name})
 
+    schools = School.objects.all()
+    return render(request, 'schools.html', {'schools': schools})
+
+    schools = School.objects.all()
+    return render(request, 'schools.html', {'schools': schools})
+
+    schools = School.objects.all()
+    return render(request, 'schools.html', {'schools': schools})
+
+    schools = School.objects.all()
+    return render(request, 'schools.html', {'schools': schools})

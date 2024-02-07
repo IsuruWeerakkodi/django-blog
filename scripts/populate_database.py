@@ -11,21 +11,46 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'personal_blog.settings')
 import django
 django.setup()
 
-from blog.models import School,ClassName
+from blog.models import School,ClassName, AssessmentAreas, Student, Answers, Awards, Subject
 
 def populate_database_from_csv(csv_file_path):
     with open(csv_file_path, 'r') as file:
         reader = csv.DictReader(file)
         for row in reader:
             School.objects.create(
+                id = row['StudentID'],
                 name=row['school_name'],
-                # Add more fields as needed
             )    
 
             ClassName.objects.create(
-                class_name=row['year'],
-                # Add more fields as needed    
-            )    
+                id=row['StudentID'],
+                class_name=row['Class'],
+            )
+            AssessmentAreas.objects.create(
+                id=row['StudentID'],
+                assessment_ares = row['Assessment Areas']
+            )
+
+            Student.objects.create(
+                id=row['StudentID'],
+                full_name = row['First Name'] + row['Last Name']
+            )
+
+            Answers.objects.create(
+                id=row['StudentID'],
+                answers = row['Answers']
+            )
+
+            Awards.objects.create(
+                id=row['StudentID'],
+                awards = row['award']
+            )
+
+            Subject.objects.create(
+                id=row['StudentID'],
+                subject = row['Subject'],
+                subject_score = row['sydney average score']
+            )
 
 # if __name__ == "__main__":
 #     csv_file_path = '/home/isuru/Documents/django-application/data/data.csv'

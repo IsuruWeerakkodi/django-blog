@@ -11,23 +11,23 @@ class ClassNameAdmin(admin.ModelAdmin):
     pass
 
 
-class AssessmentAreasAdmin:
+class AssessmentAreasAdmin(admin.ModelAdmin):
     pass
 
 
-class StudentAdmin:
+class StudentAdmin(admin.ModelAdmin):
     pass
 
 
-class AnswersAdmin:
+class AnswersAdmin(admin.ModelAdmin):
     pass
 
 
-class AwardsAdmin:
+class AwardsAdmin(admin.ModelAdmin):
     pass
 
 
-class SubjectAdmin:
+class SubjectAdmin(admin.ModelAdmin):
     pass
 
 

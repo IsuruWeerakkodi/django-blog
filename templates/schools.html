@@ -7,6 +7,7 @@
     <title>Data Visualization</title>
   </head>
   <body>
+
     <h1>School</h1>
     <table border="1">
       <thead>
@@ -23,11 +24,11 @@
       </tbody>
     </table>
 
-    <h1>School</h1>
+    <h1>Class</h1>
     <table border="1">
       <thead>
         <tr>
-          <th>class_name</th>
+          <th>Class</th>
         </tr>
       </thead>
       <tbody>
@@ -38,5 +39,86 @@
         {% endfor %}
       </tbody>
     </table>
+
+    <h1>Assessment Area</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Assessment area</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>Student</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Student</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>Answers</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Answers</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>Awards</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Awards</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h1>Subject</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for school in schools %}
+        <tr>
+          <td>{{ school.name }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
   </body>
 </html>
