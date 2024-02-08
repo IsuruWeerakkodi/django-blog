@@ -59,7 +59,7 @@ Welcome to my Django application! This application is designed to provide data a
 
 ## Docker Support
 - This app can also be run using Docker for containerization.
-- [See Dockerfile](dockerfile) for the project
+- [See Dockerfile](Dockerfile) for the project
 - Build the Docker image:
 
   ```
