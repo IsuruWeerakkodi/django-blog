@@ -1,27 +1,23 @@
 from django.shortcuts import render
-from blog.models import School,ClassName
-
-# Create your views here.
-# views.py
+from blog.models import School, ClassName, AssessmentAreas, Student, Answers, Awards, Subject
 
 def schools_view(request):
     schools = School.objects.all()
-    return render(request, 'schools.html', {'schools': schools})
+    class_names = ClassName.objects.all()
+    assessment_areas = AssessmentAreas.objects.all()
+    students = Student.objects.all()
+    answers = Answers.objects.all()
+    awards = Awards.objects.all()
+    subjects = Subject.objects.all()
 
-    class_name = ClassName.objects.all()
-    return render(request, 'schools.html', {'class_name': class_name})
+    return render(request, 'schools.html', {
+        'schools': schools,
+        'class_names': class_names,
+        'assessment_areas': assessment_areas,
+        'students': students,
+        'answers': answers,
+        'awards': awards,
+        'subjects': subjects,
+    })
 
-    assessment_areas = School.objects.all()
-    return render(request, 'schools.html', {'assessment_areas': assessment_areas})
 
-    full_name = School.objects.all()
-    return render(request, 'schools.html', {'full_name': full_name})
-
-    answers = School.objects.all()
-    return render(request, 'schools.html', {'answers': answers})
-
-    awards = School.objects.all()
-    return render(request, 'schools.html', {'awards': awards})
-
-    subject = School.objects.all()
-    return render(request, 'schools.html', {'subject': subject})

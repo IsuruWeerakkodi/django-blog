@@ -59,6 +59,7 @@ Welcome to my Django application! This application is designed to provide data a
 
 ## Docker Support
 - This app can also be run using Docker for containerization.
+- [See Dockerfile](dockerfile) for the project
 - Build the Docker image:
 
   ```
@@ -80,6 +81,15 @@ Welcome to my Django application! This application is designed to provide data a
 
 ## Authors
 - [Isuru Weerakkodi](https://github.com/IsuruWeerakkodi)
+
+## References for the project
+- https://realpython.com/build-a-blog-from-scratch-django/#set-up-the-development-environment
+- https://www.djangoproject.com/
+- https://www.w3schools.com/django/
+
+## Visit my portfolio website on,
+
+  [http://www.isuruweerakkodi.com/](http://www.isuruweerakkodi.com/)
 
 ## Contact
 If you have any questions or suggestions, feel free to reach out to the project maintainer: Email: isuruweerakkodi24@gmail.com
