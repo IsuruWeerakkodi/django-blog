@@ -41,6 +41,10 @@ Welcome to my Django application! This application is designed to provide data a
    ```
 
 2. Access the app in your web browser at `http://127.0.0.1:8000/`.
+3. Access the data tables through `http://127.0.0.1:8000/schools`
+4. Access the admin through `http://127.0.0.1:8000/admin`
+
+5. Here, port can be used as per your requirement, 8000 is default.
 
 ## Usage
 - Once the app is running, you can navigate to different URLs to interact with the app features.
