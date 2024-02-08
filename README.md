@@ -61,6 +61,8 @@ Welcome to my Django application! This application is designed to provide data a
 - This app can also be run using Docker for containerization.
 - Build the Docker image:
 
+- [See Dockerfile](Dockerfile)
+
   ```
   docker build -t django-app .
   ```
@@ -71,7 +73,6 @@ Welcome to my Django application! This application is designed to provide data a
   docker run -p 8000:8000 django-app
   ```
 
-  Further assistance on docker support -> [See Dockerfile](Dockerfile).
 
 ## Contributing
 - Contributions are welcome! Feel free to submit pull requests or raise issues.
